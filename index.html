@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to my aeri,</title>
+    <style>
+        /* Eliminar márgenes por defecto del navegador */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Evita el scroll si prefieres la imagen fija */
+            background-color: #fff; /* Fondo blanco */
+        }
+
+        .contenedor-imagen {
+            width: 100vw;  /* 100% del ancho de la ventana */
+            height: 100vh; /* 100% del alto de la ventana */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 95%;  /* Ocupa casi todo el ancho, dejando un pequeño margen */
+            max-height: 95%; /* Ocupa casi todo el alto, dejando un pequeño margen */
+            object-fit: contain; /* Mantiene la proporción de la imagen */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-imagen">
+        <img src="URL_DE_TU_IMAGEN.jpg" alt="Mi imagen de fondo">
+    </div>
+
+</body>
+</html>
