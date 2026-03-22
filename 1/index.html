@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página de GitHub</title>
+    <title>to my aeri,</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 
@@ -58,3 +58,35 @@
             text-decoration: none;
             color: #333;
             transition: transform 0.3s ease, opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .flecha-siguiente:hover {
+            transform: translateX(8px); /* Animación al pasar el mouse */
+            opacity: 0.6;
+        }
+
+        .icono-svg {
+            width: 35px;
+            height: 35px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <h1>to my aeri</h1>
+        
+        <img src="tu-imagen.jpg" alt="Imagen principal" class="imagen-principal">
+    </div>
+
+    <a href="siguiente.html" class="flecha-siguiente" title="Continuar">
+        <svg class="icono-svg" viewBox="0 0 24 24">
+            <path d="M12,4l-1.41,1.41L16.17,11H4v2h12.17l-5.58,5.59L12,20l8-8L12,4z"/>
+        </svg>
+    </a>
+
+</body>
+</html>
