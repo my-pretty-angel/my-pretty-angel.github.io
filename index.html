@@ -4,36 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to my aeri,</title>
+    
+    <!-- Importación de la fuente desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
     <style>
-        /* Eliminar márgenes por defecto del navegador */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden; /* Evita el scroll si prefieres la imagen fija */
-            background-color: #fff; /* Fondo blanco */
+            background-color: #ffffff; /* Fondo blanco */
+            font-family: 'Cedarville Cursive', cursive; /* Aplicar la fuente */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        .contenedor-imagen {
-            width: 100vw;  /* 100% del ancho de la ventana */
-            height: 100vh; /* 100% del alto de la ventana */
+        .contenedor {
+            width: 90vw;
+            height: 80vh; /* Deja espacio para el texto */
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
         img {
-            max-width: 95%;  /* Ocupa casi todo el ancho, dejando un pequeño margen */
-            max-height: 95%; /* Ocupa casi todo el alto, dejando un pequeño margen */
-            object-fit: contain; /* Mantiene la proporción de la imagen */
-            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 8px; /* Opcional: bordes redondeados suaves */
         }
     </style>
 </head>
 <body>
 
-    <div class="contenedor-imagen">
-        <img src="URL_DE_TU_IMAGEN.jpg" alt="Mi imagen de fondo">
+    <div class="contenedor">
+        <h1>Tu mensaje aquí</h1>
+        
+        <!-- Reemplaza la URL por la de tu imagen -->
+        <img src="https://via.placeholder.com/1200x800" alt="Imagen principal">
     </div>
 
 </body>
