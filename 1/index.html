@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Personalizado - GitHub</title>
+    <title>Mi Página de GitHub</title>
     
-    <!-- Importación de la fuente Cedarville Cursive -->
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 
     <style>
-        /* Reset y Estilo Global */
+        /* Estilo Global */
         body, html {
             margin: 0;
             padding: 0;
@@ -21,7 +20,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            overflow: hidden; /* Evita que aparezcan barras de desplazamiento */
+            overflow: hidden; /* Mantiene la página limpia sin scroll */
         }
 
         .contenedor-principal {
@@ -37,36 +36,25 @@
         }
 
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-weight: normal;
         }
 
-        /* Estilo del Video */
-        video {
-            width: 95%;      /* Ocupa casi todo el ancho disponible */
-            max-width: 1100px; /* Límite para que no se vea gigante en monitores pro */
-            height: auto;
-            max-height: 75vh;  /* Limita la altura para que no empuje el texto fuera */
-            border-radius: 12px;
-            /* Opcional: añade una sombra muy sutil para que resalte sobre el blanco */
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
-            outline: none;
+        /* Estilo de la Imagen (casi todo el plano) */
+        .imagen-principal {
+            max-width: 90%;  /* Ocupa casi todo el ancho */
+            max-height: 75vh; /* Ocupa casi todo el alto, respetando el espacio del texto */
+            object-fit: contain;
+            border-radius: 5px; /* Opcional: un toque suave en las esquinas */
         }
-    </style>
-</head>
-<body>
 
-    <div class="contenedor-principal">
-        <h1>Un momento para recordar</h1>
-        
-        <!-- Reemplaza "tu-video.mp4" por el nombre de tu archivo en GitHub -->
-        <video controls autoplay muted loop>
-            <source src="tu-video.mp4" type="video/mp4">
-            Tu navegador no soporta el formato de video.
-        </video>
-    </div>
-
-</body>
-</html>
+        /* Estilo de la Flecha en el costado derecho abajo */
+        .flecha-siguiente {
+            position: fixed;
+            bottom: 30px;
+            right: 40px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease, opacity 0.3s ease;
