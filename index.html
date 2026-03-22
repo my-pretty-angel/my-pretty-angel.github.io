@@ -5,38 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to my aeri,</title>
     
-    <!-- Importación de la fuente desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 
     <style>
+        /* Estilo Global */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
+            width: 100%;
             background-color: #ffffff; /* Fondo blanco */
-            font-family: 'Cedarville Cursive', cursive; /* Aplicar la fuente */
+            font-family: 'Cedarville Cursive', cursive;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            overflow: hidden; /* Mantiene la página limpia sin scroll */
         }
 
-        .contenedor {
-            width: 90vw;
-            height: 80vh; /* Deja espacio para el texto */
+        .contenedor-principal {
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         h1 {
             font-size: 2.5rem;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-weight: normal;
         }
-        
+
+        /* Estilo de la Imagen (casi todo el plano) */
+        .imagen-principal {
+            max-width: 90%;  /* Ocupa casi todo el ancho */
+            max-height: 75vh; /* Ocupa casi todo el alto, respetando el espacio del texto */
+            object-fit: contain;
+            border-radius: 5px; /* Opcional: un toque suave en las esquinas */
+        }
+
         /* Estilo de la Flecha en el costado derecho abajo */
         .flecha-siguiente {
             position: fixed;
@@ -49,26 +62,31 @@
             align-items: center;
         }
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            border-radius: 8px; /* Opcional: bordes redondeados suaves */
+        .flecha-siguiente:hover {
+            transform: translateX(8px); /* Animación al pasar el mouse */
+            opacity: 0.6;
+        }
+
+        .icono-svg {
+            width: 35px;
+            height: 35px;
+            fill: currentColor;
         }
     </style>
 </head>
 <body>
 
-    <div class="contenedor">
-        <h1>to my aeri,</h1>
+    <div class="contenedor-principal">
+        <h1>to my aeri</h1>
         
-        <!-- Reemplaza la URL por la de tu imagen -->
-        <img src="IMG_3514.PNG" alt="letter">
+        <img src="IMG_3514.PNG" alt="Imagen principal" class="imagen-principal">
+    </div>
 
-        <a href="my-pretty-angel.github.io/1" class="flecha-siguiente" title="Continuar">
+    <a href="siguiente.html" class="flecha-siguiente" title="Continuar">
         <svg class="icono-svg" viewBox="0 0 24 24">
             <path d="M12,4l-1.41,1.41L16.17,11H4v2h12.17l-5.58,5.59L12,20l8-8L12,4z"/>
-    </div>
+        </svg>
+    </a>
 
 </body>
 </html>
